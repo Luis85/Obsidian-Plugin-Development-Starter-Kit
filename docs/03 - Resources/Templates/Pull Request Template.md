@@ -1,7 +1,11 @@
 ---
-type: Template
+type: PullRequestTemplate
 status: new
 source: "[[docs/03 - Resources/GitHub/Luis85/Obsidian-Plugin-Development-Starter-Kit/Pull Request - 19|Pull Request - 19]]"
+tags:
+  - pull-request
+  - template
+registry: true
 ---
 
 ## Problem
@@ -21,7 +25,7 @@ source: "[[docs/03 - Resources/GitHub/Luis85/Obsidian-Plugin-Development-Starter
 - What value can be unlocked if solved?  
 
 
-## Solution – Key Features
+## Solution - Key Features
 
 - High-level description of the solution approach.  
 
