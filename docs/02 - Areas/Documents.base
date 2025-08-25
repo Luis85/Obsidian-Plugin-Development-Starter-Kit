@@ -1,0 +1,23 @@
+views:
+  - type: table
+    name: Typed Documents
+    filters:
+      and:
+        - file.hasProperty("type")
+    order:
+      - type
+      - file.name
+    columnSize:
+      note.type: 140
+  - type: table
+    name: Untyped Documents
+    filters:
+      and:
+        - '!file.hasProperty("type")'
+        - file.ext == "md"
+        - '!file.path.contains("GitHub")'
+    order:
+      - type
+      - file.name
+    columnSize:
+      note.type: 140

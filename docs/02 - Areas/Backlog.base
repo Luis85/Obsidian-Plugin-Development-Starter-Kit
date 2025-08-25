@@ -1,21 +1,19 @@
-formulas:
-  Untitled: if(file.name.contains("Issue"), "Issue", "Pull Request")
 properties:
   file.name:
     displayName: Item
   note.title:
     displayName: Title
-  formula.Untitled:
-    displayName: Type
 views:
   - type: table
     name: Index
     filters:
       and:
-        - file.path.contains("GitHub")
-        - file.ext == "md"
+        - or:
+            - file.name.startsWith("Feature -")
+            - file.path.contains("GitHub")
+        - and:
+            - file.ext == "md"
     order:
-      - formula.Untitled
       - file.name
       - title
       - status
@@ -27,26 +25,71 @@ views:
       - property: status
         direction: ASC
     columnSize:
-      formula.Untitled: 99
+      file.name: 230
       note.title: 385
       note.status: 88
       note.url: 497
-  - type: cards
-    name: Cards
+  - type: table
+    name: Issues
     filters:
       and:
         - file.path.contains("GitHub")
         - file.ext == "md"
+        - file.name.contains("Issue")
     order:
-      - title
-      - formula.Untitled
-      - status
       - file.name
+      - title
+      - status
+      - assignees
       - url
+      - file.tags
+    sort:
+      - property: status
+        direction: ASC
+    columnSize:
+      file.name: 123
+      note.title: 334
+      note.status: 88
+      note.url: 497
+  - type: table
+    name: Pull Requests
+    filters:
+      and:
+        - file.path.contains("GitHub")
+        - file.ext == "md"
+        - file.name.contains("Pull Request")
+    order:
+      - file.name
+      - title
+      - status
+      - url
+      - file.tags
+      - assignees
     sort:
       - property: status
         direction: ASC
     columnSize:
       formula.Untitled: 99
+      file.name: 123
       note.title: 385
       note.status: 88
+      note.url: 497
+  - type: table
+    name: Features
+    filters:
+      and:
+        - file.name.startsWith("Feature -")
+        - file.ext == "md"
+    order:
+      - file.name
+      - status
+      - assignees
+      - file.tags
+      - source
+    sort:
+      - property: status
+        direction: ASC
+    columnSize:
+      file.name: 260
+      note.status: 131
+      note.assignees: 132
