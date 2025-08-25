@@ -1,10 +1,11 @@
+
 ## Solutionidea
 
 - [ ] Provide a complete and versioned Development Environment as downloadable Obsidian Vault Folder with the necessary Plugins and Settings in place
-- [ ] Integrate with Git for versioning
+- [x] Integrate with Git for versioning
 - [ ] Provide Plugin Boilerplate for Development in TypeScript
 - [ ] Provide Documentation Structure for Plugin plublishing
-- [ ] Integrate with GitHub for Issue Tracking and Feedback for Improvements
+- [x] Integrate with GitHub for Issue Tracking and Feedback for Improvements
 
 
 ## Workflow
