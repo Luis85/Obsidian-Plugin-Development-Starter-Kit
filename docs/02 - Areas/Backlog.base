@@ -1,0 +1,52 @@
+formulas:
+  Untitled: if(file.name.contains("Issue"), "Issue", "Pull Request")
+properties:
+  file.name:
+    displayName: Item
+  note.title:
+    displayName: Title
+  formula.Untitled:
+    displayName: Type
+views:
+  - type: table
+    name: Index
+    filters:
+      and:
+        - file.path.contains("GitHub")
+        - file.ext == "md"
+    order:
+      - formula.Untitled
+      - file.name
+      - title
+      - status
+      - url
+      - file.tags
+    sort:
+      - property: file.name
+        direction: DESC
+      - property: status
+        direction: ASC
+    columnSize:
+      formula.Untitled: 99
+      note.title: 385
+      note.status: 88
+      note.url: 497
+  - type: cards
+    name: Cards
+    filters:
+      and:
+        - file.path.contains("GitHub")
+        - file.ext == "md"
+    order:
+      - title
+      - formula.Untitled
+      - status
+      - file.name
+      - url
+    sort:
+      - property: status
+        direction: ASC
+    columnSize:
+      formula.Untitled: 99
+      note.title: 385
+      note.status: 88
