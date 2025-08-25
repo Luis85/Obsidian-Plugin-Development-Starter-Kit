@@ -7,8 +7,12 @@ views:
     order:
       - type
       - file.name
+      - status
+      - source
+      - file.tags
     columnSize:
       note.type: 140
+      file.name: 358
   - type: table
     name: Untyped Documents
     filters:

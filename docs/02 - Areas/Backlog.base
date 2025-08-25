@@ -20,8 +20,6 @@ views:
       - url
       - file.tags
     sort:
-      - property: file.name
-        direction: DESC
       - property: status
         direction: ASC
     columnSize:
