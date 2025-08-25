@@ -1,3 +1,9 @@
+---
+type: ProcessDescription
+status: new
+source: "[[docs/03 - Resources/GitHub/Luis85/Obsidian-Plugin-Development-Starter-Kit/Pull Request - 19|Pull Request - 19]]"
+---
+
 We structure our work along two parallel but connected tracks: **Discovery** and **Delivery**. In the **Discovery track**, we use GitHub Issues to capture ideas and define the problem space. Each Issue represents a problem, domain, or opportunity and becomes the place where discovery work is documented, from research notes and insights to domain understanding. 
 
 In parallel, the **Delivery track** begins when we decide to address a problem by opening a draft Pull Request. The Pull Request describes the initial scope of the solution and links back to the relevant Issue. Over time, the PR is refined with emerging functional requirements in the form of User Stories, design documents, and deliverables such as user journeys or markdown files. 

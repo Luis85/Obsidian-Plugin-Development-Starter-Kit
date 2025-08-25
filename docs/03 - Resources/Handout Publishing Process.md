@@ -1,3 +1,9 @@
+---
+type: Handout
+status: new
+source: "[[docs/03 - Resources/GitHub/Luis85/Obsidian-Plugin-Development-Starter-Kit/Pull Request - 19|Pull Request - 19]]"
+---
+
 # 🧭 Handout: Working with Issues & Pull Requests
 
 *Project Publishing Process (GitHub + Obsidian)*

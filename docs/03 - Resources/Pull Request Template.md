@@ -1,3 +1,8 @@
+---
+type: Template
+status: new
+source: "[[docs/03 - Resources/GitHub/Luis85/Obsidian-Plugin-Development-Starter-Kit/Pull Request - 19|Pull Request - 19]]"
+---
 
 ## Problem
 
