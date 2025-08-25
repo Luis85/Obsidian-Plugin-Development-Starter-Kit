@@ -1,27 +1,47 @@
 views:
   - type: table
-    name: Typed Documents
+    name: Registry
     filters:
       and:
-        - file.hasProperty("type")
+        - registry == true
     order:
       - type
       - file.name
       - status
       - source
       - file.tags
+    sort: []
     columnSize:
-      note.type: 140
+      note.type: 168
       file.name: 358
+      note.status: 114
   - type: table
     name: Untyped Documents
     filters:
       and:
-        - '!file.hasProperty("type")'
+        - type.isEmpty()
         - file.ext == "md"
         - '!file.path.contains("GitHub")'
     order:
       - type
       - file.name
+      - source
+      - registry
+      - file.tags
     columnSize:
       note.type: 140
+  - type: table
+    name: Typed Documents
+    filters:
+      and:
+        - "!type.isEmpty()"
+    order:
+      - type
+      - file.name
+      - status
+      - source
+      - registry
+      - file.tags
+    columnSize:
+      note.type: 140
+      file.name: 358

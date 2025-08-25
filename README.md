@@ -1,5 +1,9 @@
+---
+source: "[[docs/03 - Resources/GitHub/Luis85/Obsidian-Plugin-Development-Starter-Kit/Pull Request - 19|Pull Request - 19]]"
+registry: true
+---
 
-## Solutionidea
+## Solution idea
 
 - [ ] Provide a complete and versioned Development Environment as downloadable Obsidian Vault Folder with the necessary Plugins and Settings in place
 - [x] Integrate with Git for versioning

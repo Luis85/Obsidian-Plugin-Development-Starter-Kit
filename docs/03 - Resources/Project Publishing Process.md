@@ -2,6 +2,7 @@
 type: ProcessDescription
 status: new
 source: "[[docs/03 - Resources/GitHub/Luis85/Obsidian-Plugin-Development-Starter-Kit/Pull Request - 19|Pull Request - 19]]"
+registry: true
 ---
 
 We structure our work along two parallel but connected tracks: **Discovery** and **Delivery**. In the **Discovery track**, we use GitHub Issues to capture ideas and define the problem space. Each Issue represents a problem, domain, or opportunity and becomes the place where discovery work is documented, from research notes and insights to domain understanding. 
@@ -51,7 +52,7 @@ This creates a tight loop:
 
    * Title: Reference the Issue and describe the intent.
    * Link relevant Issues.
-   * Fill in the [Pull Request Template](docs/03%20-%20Resources/Pull%20Request%20Template.md) (Problem, Insight, Opportunity, Solution).
+   * Fill in the [Pull Request Template](docs/03%20-%20Resources/Templates/Pull%20Request%20Template.md) (Problem, Insight, Opportunity, Solution).
    * Use the draft state as a discussion/proposal.
 
 4. **Iterate on the PR**
